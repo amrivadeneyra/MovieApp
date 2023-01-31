@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    color: #000;
+    scroll-behavior: smooth;
+}
+
+body {
+
+    font-family: 'Poppins', sans-serif;
+    background-color: #191919;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: end;
+    align-items: center;
+    z-index: 10000;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to bottom, #191919f1, transparent);
+    z-index: -1;
+}
+
+header a {
+    cursor: pointer;
+    text-decoration: none;
+    margin: 20px 30px;
+}
+
+header a h1 {
+    font-size: calc(0.7em + 2vw);
+    color: #8B0C3C;
+}
+
+.home {
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/915/349/257/joker-smile-wallpaper-preview.jpg");
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+}
+
+.home .wrapper {
+    height: 100vh;
+    display: grid;
+    align-content: center;
+    grid-template-columns: 1fr 1fr;
+}
+
+.home .container-home {
+    grid-column: 2;
+    align-self: center;
+    max-width: 45vw;
+    height: 74vh;
+}
+
+.home .container-home h3 {
+    font-size: calc(1.5em + 5vw);
+    font-weight: 500;
+    color: #FFFFED;
+}
+
+.home .container-home p {
+    font-size: calc(0.9em + 0.2vw);
+    margin: 37px 0;
+    color: #fff;
+}
+
+.home .container-home a {
+    position: relative;
+    top:5px;
+    display: inline-block;
+    padding: 9px 30px;
+    text-decoration: none;
+    font-size: 1.4rem;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    color: #fff;
+    transition: all 1s ease;
+}
+
+.home .container-home a:hover {
+    background-color: #8B0C3C;
+    transform: scale(1.1);
+}
+
+.home::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #191919, transparent);
+}
+
+.category {
+    margin: 50px 0 0 50px;
+    font-size: 2rem;
+}
+
+.category h2 {
+    margin: 0;
+    color: #fff;
+    font-size: calc(1.375rem + 1.5vw);
+    font-weight: 500;
+}
+
+#cards{
+    max-width:95%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 50px;
+    justify-content: center;
+}
+#cards div{
+    flex: 2;
+    display: grid;
+    grid-template-columns:1fr;
+    max-width: 350px;
+    justify-items: center;
+    margin: 25px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #2f2f2f5d;
+}
+#cards div img{
+    box-shadow: 0 10px 6px -6px rgba(6,4,12,0.801);
+    max-width: 300px;
+    height: 450px;
+    border-radius: 15px;
+    transition: transform .5s ease;
+    margin-top:12px;
+}
+#cards div img:hover{
+    transform: scale(1.03);
+}
+#cards div h3{
+    color: #ffffed;
+    margin:25px 0 15px;
+    text-align: center;
+    font-size: calc(1em + 1vw);
+    font-weight: 500;
+}
+#cards div .id{
+    display: none;
+}
+
+#cards div .btn{
+    display: flex;
+    background-color: transparent;
+    margin: 10px;
+    padding: 10px;
+}
+
+#cards div a {
+    display:grid;
+    align-items: center;
+    justify-items: center;
+    width:70px;
+    height:70px;
+    margin:10px;
+    background-color: #fffadd;
+    cursor:pointer;
+    border-radius:10px;
+    text-decoration:none;
+    transition: transform .5s ease;
+}
+#cards div a span{
+    font-size:35px !important;
+    color:#000;
+}
+ #cards div a:hover{
+    transform: scale(1.2);
+ }
+#cards div a:nth-child(2) {
+    background-color:#8B0C3C;
+}
+#cards div .article{
+    width: 100%;
+    display:flex;
+    flex-wrap:wrap;
+    align-content: center;
+    margin:10px;
+    padding:10px;
+}
+#cards div .article .small{
+    color: #f7e5a0;
+    font-size: 15px;
+    padding:5px 20px 5px 5px;
+}
+#cards div .article .p{
+    color: #f7e5a0;
+    font-size: 15px;
+    padding:5px 20px 5px 5px;
+}
+
+#cards div .article .span{
+    color: #ffffed;
+    font-size: 15px;
+    padding-left:10px;
+}
